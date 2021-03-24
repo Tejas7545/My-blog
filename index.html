@@ -1,37 +1,150 @@
 <html>
-<head>
-<title>
-project-77
-</title>
-</head>
-<body>
-<h1>
-PROJECT-77
-</h1>
-<p>
-Visual Studio Code is a freeware source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
-</p>
-<p>
-Console Overview bookmark_border. This page explains how the Chrome DevTools Console makes it easier to develop web pages. The Console has 2 main uses: viewing logged messages and running JavaScript
-</p>
+    <p>
+        How to declare the arrays ? 
+        <h4 id="declaration_of_arrays"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the first element of the array ?
+        <h4 id="access_first_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the second element of the array ?
+        <h4 id="access_second_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the third element of the array ?
+        <h4 id="access_third_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to get the length of the array ?
+        <h4 id="display_length_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to loop the array array ?
+        <h4 id="loop_the_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add element at the end of the array ?
+        <h4 id="add_element_at_the_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the end of the array ?
+        <h4 id="add_more_element_at_the_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to declare the arrays with alphabets ? 
+        <h4 id="display_alphabets_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to sort the arrays with alphabets ? 
+        <h4 id="display_sorted_alphabets_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to reverse the arrays with alphabets ? 
+        <h4 id="display_reverse_array"> 
+        </h4>
+    </p>
+<hr>      
+    <p>
+        How to declare the arrays with numbers ? 
+        <h4 id="display_number_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the maximum number from the arrays ? 
+        <h4 id="display_maximum_number"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the minimum number from the arrays ? 
+        <h4 id="display_minimum_number"> 
+        </h4>
+    </p>
+
+
 <script>
-console.log("My first console project");
-var fn="Tejas";
-var ln="Shahi";
-var fun=fn.concat (ln);
-console.log(fun);
-var num1=7;
-var num2=5;
-var add=num1+num2;
-console.log(add);
-var sub=num1-num2;
-console.log(sub);
-var mul=num1*num2;
-console.log(mul);
-var div=num1/num2;
-console.log(div);
+
+    //How to declarpe the arrays ? the id to be refer for innerHTML is declaration_of_arrays
+var fruits=["apple","orange","mango"];
+console.log(fruits);
+document.getElementById("declaration_of_arrays").innerHTML=fruits;
+    //How to fetch the first element of the array ? the id to be refer for innerHTML is access_first_element
+    var firstfruits=fruits[0];
+    console.log(firstfruits);
+    document.getElementById("access_first_element").innerHTML=firstfruits;
+    //How to fetch the second element of the array ? the id to be refer for innerHTML is access_second_element
+var second_fruit = fruits[1]; console.log(second_fruit); document.getElementById("access_second_element").innerHTML = second_fruit;
+
+    //How to fetch the third element of the array ? the id to be refer for innerHTML is access_third_element
+var third_fruit = fruits[2]; console.log(third_fruit); document.getElementById("access_third_element").innerHTML = third_fruit;
+
+    //How to get the length of the array ? the id to be refer for innerHTML is display_length_of_array
+var lengthofarray=fruits.length;
+console.log (lengthofarray);
+document.getElementById("display_length_of_array").innerHTML=lengthofarray;
+
+    //How to loop the array ? the id to be refer for innerHTML is loop_the_array
+var arrayvalue="";
+for(i=0;i<fruits.length;i++){
+    console.log(fruits[i]);
+    arrayvalue=arrayvalue+fruits[i]+"<br>";
+
+}
+    //adding element at the end of the array using push method
+    //How to add element at the end of the array ? the id to be refer for innerHTML is add_element_at_the_end_of_array
+fruits.push("banana");
+console.log(fruits);
+document.getElementById("add_element_at_the_end_of_array").innerHTML=fruits;
+
+    //How to more elements at the end of the array ? the id to be refer for innerHTML is add_more_element_at_the_end_of_array
+fruits.push("pineapple");
+console.log(fruits);
+document.getElementById("add_more_element_at_the_end_of_array").innerHTML=fruits;
+    //How to declare array with alphabets ? the id to be refer for innerHTML is display_alphabets_array
+var alphabets = ["l" ,"a" , "e" , "j" , "b" , "g" , "f" , "h" , "c" , "d" , "i" , "k"]; console.log(alphabets); document.getElementById("display_alphabets_array").innerHTML = alphabets;
+
+    //How to sort array with alphabets ? the id to be refer for innerHTML is display_sorted_alphabets_array
+alphabets.sort();
+console.log(alphabets);
+document.getElementById("display_sorted_alphabets_array").innerHTML=alphabets;
+    //How to reverse the array ? the id to be refer for innerHTML is display_reverse_array
+alphabets.reverse();
+console.log(alphabets);
+document.getElementById("display_reverse_array").innerHTML=alphabets;
+    //How to declare array with numbers ? the id to be refer for innerHTML is display_number_array
+var numbers = ["45", "4", "9", "16", "25"]; console.log(numbers); document.getElementById("display_number_array").innerHTML = numbers;
+
+    //How to find the maximum number from the array with numbers ? the id to be refer for innerHTML is display_maximum_number
+var maximumnumber=Math.max.apply(Math,numbers);
+console.log(maximumnumber);
+document.getElementById("display_maximum_number").innerHTML=maximumnumber;
+
+    //How to find the minimum number from the array with numbers ? the id to be refer for innerHTML is display_minimum_number
+var minimumnumber=Math.min.apply(Math,numbers);
+console.log(minimumnumber);
+document.getElementById("display_minimum_number").innerHTML=minimumnumber;
+
 </script>
 </html>
-
-
-
