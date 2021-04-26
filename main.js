@@ -1,8 +1,12 @@
 canvas=document.getElementById("myCanvas");
 ctx=canvas.getContext("2d");
+nasa_mars_images_array=["Mars1.jpg","Mars2.jpg","Mars3.jpg","Mars4.jpg"];
+random_number=Math.floor(Math.random()*4);
+console.log(random_number);
 rover_width=100;
 rover_height=90;
-background_image="mars.jpg";
+background_image=nasa_mars_images_array [random_number];
+console.log("background_image= "+background_image);
 rover_image="rover.png";
 rover_x=10;
 rover_y=10;
